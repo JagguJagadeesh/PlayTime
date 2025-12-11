@@ -1,41 +1,67 @@
-# Dependencies
-/node_modules
-/jspm_packages/
+### Node Modules ###
+node_modules/
+jspm_packages/
 
-# Optional npm cache directory
-.npm
+### npm / yarn cache ###
+.npm/
+.pnpm/
+.yarn/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
 
-# Optional eslint cache
-.eslintcache
-
-# dotenv environment variables file
+### Environment Variables ###
 .env
-.env.test
+.env.*
+!.env.example
 
-# Logs
-logs
+### Logs ###
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
+pnpm-debug.log*
 lerna-debug.log*
 
-# Diagnostic reports
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+### Diagnostic Reports ###
+report.*.json
 
-# Runtime data
-pids
+### Runtime Data ###
+pids/
 *.pid
 *.seed
 *.pid.lock
 
-# Coverage and build artifacts
-coverage
+### Build Outputs ###
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+
+### Next.js ###
+.next/
+.vercel/
+
+### Nuxt ###
+.nuxt/
+
+### Coverage ###
+coverage/
 *.lcov
-.nyc_output
-/build
-/dist
-/out
-.cache
-.parcel-cache
-.next
-.nuxt
+.nyc_output/
+
+### Prisma ###
+prisma/migrations/
+prisma/generated/
+src/generated/prisma/
+*.db
+
+### TypeScript ###
+*.tsbuildinfo
+
+### Lockfiles (Optional — if you want to exclude) ###
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
