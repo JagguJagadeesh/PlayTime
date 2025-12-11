@@ -1,0 +1,44 @@
+# Dependencies
+/node_modules
+# Optional npm cache directory
+.npm
+# Optional eslint cache
+.eslintcache
+
+# Next.js build output
+.next/
+/out/
+
+# Production
+/build
+# Misc
+.DS_Store
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Monorepo tool caches (e.g., Turborepo, Nx)
+# Turborepo
+.turbo/
+# Nx
+.nx/
+
+# Yarn v2+
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
